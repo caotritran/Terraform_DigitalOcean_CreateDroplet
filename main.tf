@@ -38,7 +38,7 @@ provisioner "remote-exec" {
   }
 }
 
-resource "digitalocean_volume" "volume-droplet-1" {
+/*resource "digitalocean_volume" "volume-droplet-1" {
   region                  = var.do_region
   #name                    = join("", ["Volume", var.do_name])
   name = "volume-droplet-1"
@@ -50,4 +50,4 @@ resource "digitalocean_volume" "volume-droplet-1" {
 resource "digitalocean_volume_attachment" "droplet-atach" {
   droplet_id = digitalocean_droplet.droplet-1.id
   volume_id  = digitalocean_volume.volume-droplet-1.id
-}
+}*/
