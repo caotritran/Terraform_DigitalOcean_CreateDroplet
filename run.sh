@@ -1,13 +1,13 @@
 #!/bin/bash
 
 sudo rm -rf .terraform/ terraform.tfstate terraform.tfstate.backup .terraform.lock.hcl
-terraform init
+/usr/local/bin/terraform init
 
-terraform apply --auto-approve
+/usr/local/bin/terraform apply --auto-approve
 
 
-ip=`terraform output -raw PublicIP`
-pass=`terraform output -json password | jq -r '.[0]'`
+ip=`/usr/local/bin/terraform output -raw PublicIP`
+pass=`/usr/local/bin/terraform output -json password | jq -r '.[0]'`
 
 echo "deploy_user ansible_host=${ip} ansible_ssh_pass=\"${pass}\" ansible_user=root ansible_port=22" > ./ansible_adduser/iplist.txt
 
