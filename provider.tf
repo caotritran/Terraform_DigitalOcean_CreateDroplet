@@ -13,7 +13,7 @@ terraform {
 
 variable "do_token" {
   type    = string
-  default = "<INPUT_TOKEN_HERE>"
+  default = 'INPUT_TOKEN_HERE'
 }
 
 # Configure the DigitalOcean Provider
