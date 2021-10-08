@@ -1,5 +1,15 @@
 data "digitalocean_image" "do_image" {
   slug = "centos-7-x64"
+  #default = "ubuntu-20-10-x64"    #
+  #default = "ubuntu-20-04-x64"    #
+  #default = "ubuntu-18-04-x64"    # 
+  #default = "ubuntu-16-04-x64"    # 
+  #default = "centos-8-x64"        #
+  #default = "centos-7-x64"        # 
+  #default = "fedora-33-x64"       #
+  #default = "fedora-32-x64"       # 
+  #default = "debian-10-x64"       #
+  #default = "debian-9-x64"        # 
 }
 
 variable "do_region" {
@@ -18,7 +28,7 @@ variable "do_region" {
 variable "do_size" {
   type    = string
   default = "s-4vcpu-8gb"
-  # DigitalOcean sizes (2021-02-01)
+  # DigitalOcean sizes (2021-02-01) https://slugs.do-api.dev/
   # ===============================
   #  - c-2, c-4, c-8, c-16, c-32
   #  - c2-2vcpu-4gb, c2-4vcpu-8gb, c2-8vcpu-16gb, c2-16vcpu-32gb, c2-32vcpu-64gb
