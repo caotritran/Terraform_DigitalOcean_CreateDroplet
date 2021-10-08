@@ -11,4 +11,4 @@ pass=`/usr/local/bin/terraform output -json password | jq -r '.[0]'`
 
 echo "deploy_user ansible_host=${ip} ansible_ssh_pass=\"${pass}\" ansible_user=root ansible_port=22" > ./ansible_adduser/iplist.txt
 
-ansible-playbook -i ./Ansible_addUser/iplist.txt ./Ansible_addUser/main.yml
+ansible-playbook -i ./ansible_adduser/iplist.txt ./ansible_adduser/main.yml
