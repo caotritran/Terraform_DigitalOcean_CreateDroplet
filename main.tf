@@ -6,6 +6,7 @@ resource "random_string" "random" {
 
 resource "digitalocean_ssh_key" "rootkey" {
   name = "rootkey"
+  public_key = "KEY_HERE"
   #public_key = file("/opt/terraform/id_rsa.pub")
   #public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiNdgoKnX13LipucnX1jXk/YFvmtgTlHmDGqvJZ9Pfv+EIKt3LlCdYIMSle6+QgGK1QcmNLqSUaACIsRvUAWUBC+yS5mY3GiC6p9I/GAdNdg5omVtA0dabsgcbQixnrSQqxvq+WgtmEMBXmeKM8fmIZ4nyRH2VD49r/iC+Bnc9b7uDafnff37wZi6bqG55wVWOLA88mZvqYAzcq5ccd1wV014zTVCeEY1tEgM4u+jYw1W/fc0U2gxViaJ0fPFrBxdKUXPUgNi6VTZbDb0C0cE4GVAstOl5jBsqBvdnQykHpOjqfON2KV2g2WBdQRaM2OWOoJVOaEhZzy8Z2rLI+W55"
 }
