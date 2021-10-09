@@ -1,7 +1,7 @@
 # Terraform_DigitalOcean_CreateDroplet
 
 Terraform auto create droplet, I ssh key pair and ssh password, In addition, it also has the create volume and attach to this droplet, output will print IP Public + Password.
-When create droplet completed, It'll create an user deploy with sudo permission
+When create droplet completed, It'll create an user deploy with sudo permission using ansible playbook.
 
 I using this when intergrate with jenkins, so need to change some variables.
 
