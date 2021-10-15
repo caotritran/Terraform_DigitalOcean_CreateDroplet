@@ -1,5 +1,6 @@
 data "digitalocean_image" "do_image" {
-  slug = "centos-7-x64"
+  slug = "redash-18-04"
+  #slug = "centos-7-x64"
   #default = "ubuntu-20-10-x64"    #
   #default = "ubuntu-20-04-x64"    #
   #default = "ubuntu-18-04-x64"    # 
